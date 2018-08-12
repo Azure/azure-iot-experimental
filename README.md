@@ -1,4 +1,8 @@
 
+# Content
+
+The code in this repository should be considered experimental, it is __not__ for use in production systems.  The code is provided to illustrate how to use Azure IoT services on alternative devices or in different senarios.  This code does not consitute an official Azure SDK and as such they may not be supported long term and get official support from the Azure IoT team.  Feel free to raise issues you find in the Issues tab but understand there could be a delay in getting them resolved.
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
