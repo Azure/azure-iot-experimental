@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        html {
+            font-size: 16px;
+        }
+
+        html,
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        * {
+            font-size: 1rem;
+        }
+
+        h1,
+        h2 {
+            line-height: 1.2em;
+            margin: 0.75rem 0.5rem;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 1.6875rem;
+        }
+
+        header {
+            display: block;
+            height: 2.75rem;
+            background: #1e6bb8;
+            color: #f5f5f5;
+            padding: 0.125rem 0.5rem;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        header .logo {
+            color: #f5f5f5;
+            font-size: 1.35rem;
+            line-height: 1.8125em;
+            margin: 0.0625rem 0.375rem 0.0625rem 0.0625rem;
+            transition: opacity 0.3s;
+        }
+
+        header .logo {
+            text-decoration: none;
+        }
+
+        .accordion {
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: rgba(178, 209, 245, 0.541); 
+        }
+        .panel {
+            padding: 0 35px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+        </style>
+    </head>
+    <header>
+        <h1 class="logo">Troubleshooting tips to make your Chirp with Azure IoT Central experience awesome!</h1>
+    </header>
+    <body>
+        <div style="padding-top: 20px;"></div>
+        <button class="accordion"><img src="i.png" width="12px"> Q. Why is my Chirp data not getting received correctly?</button>
+        <div class="panel">
+            <p>
+                A. Adjust the volume of the speakers on your computer.  The MXChip microphone is very sensitive if the volume is too high the sound data will be clipped and result in data corruption.  
+                Inversly make sure the volume is not too quiet and not getting picked up by the microphone.  Whilst the sound data can be heared quite easily against background white noise, 
+                loud voices or music in the same room may cause data corruption.
+            </p>
+        </div>
+
+        <button class="accordion"><img src="i.png" width="12px"> Q. Where can I find my IoT Central connection string?</button>
+        <div class="panel">
+            <p>
+                A. Go to your Azure IoT Central application and login.  In device explorer click the device you wish to connect.  In the top right corner click "Connect this device".  
+                A popup will show your comnnection string and you can click the copy button to copy it to the clipboard.
+            </p>
+        </div>
+
+        <button class="accordion"><img src="i.png" width="12px"> Q. How do I get the firmware onto the MXChip device?</button>
+        <div class="panel">
+            <p>
+                A. There are two options to put the firmware for this example onto the MXChip device.  The first option is to use the 
+                the pre-built firmware that can be found in the directory brebuilt_firmware.  The chirp_central.img file inside the directory can be dragged
+                and dropped onto the AZ3166 share that should be shown on your computer when the MXChip is connected by USB.  The second option
+                is to use Visual Studio Code and the Arduino plugin to build the firmware from the source in the firmware directory and let the
+                Arduino plugin flash the firmware onto the device.  Instructions for installing the Arduino plugin and the MXChip SDK can be found
+                <a href="https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/" target="_blank">here</a>.
+            </p>
+        </div>
+
+        <button class="accordion"><img src="i.png" width="12px"> Q. I want to reset my WiFi information or my connection string</button>
+        <div class="panel">
+            <p>
+                A. To reset the WiFi and device connection string hold down the A and B button until you see the display show "reset ...".  
+                Release the buttons and the device will reboot back to listening mode and you can reconfigure it from the configuration web page.
+            </p>
+        </div>
+
+        <button class="accordion"><img src="i.png" width="12px"> Q. Will this troubleshooting guide be updated?</button>
+        <div class="panel">
+            <p>
+                A. If you experience a problem and cannot find the answer on this page then enter an issue on the issues page in the Github repo.
+                  We will then try and resolve the issue and post an answer on the issues page.  If the issue has been reported multiple times or 
+                  we feel it is a significant problem we will add the question and answer to this troubleshooting guide.
+            </p>
+        </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+        </script>
+
+    </body>
+</html>

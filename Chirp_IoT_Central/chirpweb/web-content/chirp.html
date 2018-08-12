@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Chirp and Azure IoT Central</title>
+        <script src="chirp-v3.min.js"></script>
+        <script src="iotcChirp.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo">Azure IoT Central MXChip Configuration</h1>
+        </header>
+        <section class="container">
+            <div id="content" class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1" style="text-align:center;">
+                    <div>
+                        <span>
+                            Load the Chirp MXChip firmware image onto your MXChip device and power it on.  The device will initially be in listening mode.  
+                            Go to your <a href="https://aka.ms/iotcentral" target="_blank">IoT Central</a> application and copy the connection string for your device.  Paste the connection string into 
+                            the form, fill in your WiFi SSID and password, along with the six digit PIN from the MXChip devices screen.  Make sure your computer speakers are turned up to a comfortable 
+                            listening level.  Finally, press the "Send Data" button and listen for the Chirps.  Your device should now connect to your WiFi and begin sending data to IoT Central.
+                        </span>
+                    </div>
+                    <div style="padding-top: 20px;"></div>
+                    <form action="" method="post" name="configForm" onsubmit="event.preventDefault(); sendData();">
+                        <div class="input-group fluid">
+                            <input type="text" name="SSID" id="SSID" placeholder="WiFi SSID" style="width:100%;" required>
+                        </div>
+                        <div class="input-group fluid">
+                            <input type="password" value="" name="PASS" id="password" placeholder="WiFi Password" style="width:100%;">
+                        </div>
+                        <div class="input-group fluid">
+                            <input type="text" value="" name="CONN" id="connstr" placeholder="Device connection string" style="width:100%;" title="Copy in the device connection string from Azure IoT Central application" required pattern="(hostname=|HostName=|HOSTNAME=|DeviceId=|deviceid=|DEVICEID=|SharedAccessKey=|sharedaccesskey=|SHAREDACCESSKEY=).*">
+                        </div>
+                        <div class="input-group fluid">
+                            <input type="text" value="" name="PIN" id="pin" placeholder="Six digit PIN from MXChip display" style="width:100%;" title="Enter in the six digit PIN number from the MXChip display" required pattern="[0-9]{6}" autocomplete="off">
+                        </div>
+                        <div class="input-group fluid" style="padding-top: 20px;">
+                                <button type="submit" class="primary">Send data</button>
+                        </div>
+                    </form>
+                    <div style="padding-top: 10px;"> 
+                        <span style="height:60px;vertical-align:middle">Powered with technology from</span>
+                        <a href="https://www.chirp.io/" target="_blank"><img style="height:30px;vertical-align:middle" src="chirp.png"></a>
+                    </div>
+                    <div></div>
+                        <span style="height:60px;vertical-align:middle">and using Microsoft Azure MXChip IoT DevKit</span>
+                        <a href="https://microsoft.github.io/azure-iot-developer-kit/" target="_blank"><img style="height:60px;vertical-align:middle" src="mxchip.png"></a>
+                    </div>
+                    <div style="position: fixed; bottom: 0; text-align:center;">
+                        <a href="troubleshooting.html" target="_blank">Troubleshooting</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </body>
+</html>
