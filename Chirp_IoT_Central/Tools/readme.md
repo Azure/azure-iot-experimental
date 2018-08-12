@@ -9,7 +9,9 @@ Run using the following command line from the Tools directory:
 ```Bash
 python genDragnDropBin.py ../build/chirpFirmware.ino.bin ../chirpFirmware.bin
 ```
-The boot.bin version is the 1.4.1 variant of the boot file.  You can also point at the boot file in the Arduino15 directory here MacOS: /Users/{user name}/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/bootloader  Windows: C:\users\{user name}\AppData\local\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\bootloader
+The boot.bin version is the 1.4.1 variant of the boot file.  You can also point at the boot file in the Arduino15 directory here 
+__MacOS__: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/bootloader  
+__Windows__: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\bootloader
 
 ## Status
 
