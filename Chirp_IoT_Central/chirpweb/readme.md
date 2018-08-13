@@ -21,7 +21,7 @@ Before we can run the page we need to get the application key from [Chirp develo
 
 Whilst you are at the Chirp developer site you will also need to add the origin of your application to satisfy CORS rules.  Just add http://localhost:8080 click the 'ADD' button and then remember to click the 'Save' button.  You should end up with the following shown:
 
-![Chirp CORS Origin](/readme-content/CORS.png)
+![Chirp CORS Origin](readme-content/CORS.png)
 
 From the command line in this directory run the command:
 
