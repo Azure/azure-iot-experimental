@@ -10,11 +10,13 @@ The source code for the pre-built firmware binary.  The code is in a single Ardu
 
 Clone the repository or download the directory onto your computer.  Install [Visual Studio Code](https://code.visualstudio.com/download) and [Arduino IDE](https://www.arduino.cc/en/Main/Software) then follow the instructions for [installing the MXChip SDK](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/).
 
-Install the Chirp SDK.  Unfortunately this is a manual step currently, we hope to streamline this in the near future.  For now follow the following steps:
+Install the Chirp SDK.  Unfortunately this is a manual step currently, we hope to streamline this in the near future.  All the files needed for the Chirp SDK can be found in this repository in the ./Chirp_MXChip_SDK folder.
+
+For now follow the following steps:
 
 * Create a directory named Chirp in the directory: MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/libraries  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\libraries
-* Copy all the .h files from the include directory (chirp_connect_callbacks.h, chirp_connect_errors.h, chirp_connect_states.h, chirp_connect.h, chirp_sdk_defines.h) into the created Chirp directory
-* Copy the library file in the lib (.za) directory (libchirp-connect_none-armv7m-cm4-softfp.a )into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/system  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\system
+* Copy all the .h files from the ./Chirp_MXChip_SDK/include folder (chirp_connect_callbacks.h, chirp_connect_errors.h, chirp_connect_states.h, chirp_connect.h, chirp_sdk_defines.h) into the created Chirp directory
+* Copy the library file in the ./Chirp_MXChip_SDK/lib folder (libchirp-connect_none-armv7m-cm4-softfp.a )into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/system  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\system
 * Copy the platform.local.txt file into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1
 
 Load the chirpFirmware.ino file into the Visual Studio Code editor and go to line 241.
@@ -26,7 +28,7 @@ Load the chirpFirmware.ino file into the Visual Studio Code editor and go to lin
 #define APP_LICENCE "<replace with licence key from Chirp>"
 ```
 
-Go to [Chirp developer web site](https://developers.chirp.io) sign up and get an application key and secret pair and aquire a Microsoft-MXChip protocol licence.  Download the licence key and cut and paste the file contents into the APP_LICENCE #define.
+Go to [Chirp developer web site](https://developers.chirp.io) sign up and get an application key and secret pair and acquire a Microsoft-MXChip protocol licence.  Download the licence key and cut and paste the file contents into the APP_LICENCE #define.
 
 Plug the MXChip device into your computer and configure Visual Studio so it can communicate with the device, see instructions [here](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/) if not already completed.  Compile the code for upload to the device with CTRL-SHIFT-P (COMMAND-SHIFT-P on MacOS) and select Arduino: Upload.  The source will compile and be uploaded to the attached MXChip device.
 

@@ -19,7 +19,7 @@ Before we can run the page we need to get the application key from [Chirp develo
   window.Chirp = new ChirpConnect('<Chirp application key>', audioContext);
 ```
 
-Whilest you are at the Chirp developer site you will also need to add the origin of your application to satisfy CORS rules.  Just add http://localhost:8080 click the 'ADD' button and then remember to click the 'Save' button.  You should end up with the following shown:
+Whilst you are at the Chirp developer site you will also need to add the origin of your application to satisfy CORS rules.  Just add http://localhost:8080 click the 'ADD' button and then remember to click the 'Save' button.  You should end up with the following shown:
 
 ![Chirp CORS Origin](/readme-content/CORS.png)
 
@@ -32,11 +32,11 @@ node server.js
 
 The node server should now be running and you can load the provisioning page from [here](http://localhost:8080/chirp.html).  You are now ready to provision your MXChip device onto Azure IoT Central.
 
-Go to [Azure IoT Central](https://aka.ms/iotcentral) and create a new application, you can get a free application for seven days to try this out no commitment, no creditcard, just free!  When creating your application choose the 'Sample Devkits' template.  Once your application is provisioned you can clicvk omn the device explorer button on the left and then click the 'MXChip (1.0.0) template in the first column.  Click the '+ New' button and select 'Real' and a new physical device will be added to your device explorer.  To get the connection string for the device click the 'Connect this device' button in the top left corner and pop up dialog appears.  Click the 'Copy' button on the Primary connection string so the value is in the clipboard.  Now return back to the Azure IoT Central MXChip Configuration web page.
+Go to [Azure IoT Central](https://aka.ms/iotcentral) and create a new application, you can get a free application for seven days to try this out no commitment, no creditcard, just free!  When creating your application choose the 'Sample Devkits' template.  Once your application is provisioned you can click on the device explorer button on the left and then click the 'MXChip (1.0.0) template in the first column.  Click the '+ New' button and select 'Real' and a new physical device will be added to your device explorer.  To get the connection string for the device click the 'Connect this device' button in the top left corner and pop up dialog appears.  Click the 'Copy' button on the Primary connection string so the value is in the clipboard.  Now return back to the Azure IoT Central MXChip Configuration web page.
 
 Load the Chirp MXChip firmware image onto your MXChip device and power it on. The device will initially be in listening mode. Go to your IoT Central application and copy the connection string for your device. Paste the connection string into the form, fill in your WiFi SSID and password, along with the six digit PIN from the MXChip devices screen. Make sure your computer speakers are turned up to a comfortable listening level. Finally, press the "Send Data" button and listen for the Chirps. Your device should now connect to your WiFi and begin sending data to IoT Central.
 
-If you run into issues please click the troubleshooting link at the bottom of the page and see if any of the suggestions hep you.  If you still have problems then please contact us through the issues page in the Github reprository and we will try to get you a solution as soon as possible.  The troubleshooting page is a living document and we will update it as we resolve user issues.
+If you run into issues please click the troubleshooting link at the bottom of the page and see if any of the suggestions hep you.  If you still have problems then please contact us through the issues page in the Github repository and we will try to get you a solution as soon as possible.  The troubleshooting page is a living document and we will update it as we resolve user issues.
 
 ## Status
 

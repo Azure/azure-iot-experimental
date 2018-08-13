@@ -10,7 +10,7 @@ A pre-built firmware binary that can be dragged and dropped onto the Azure MXChi
 
 Download the chirpFirmware.bin file.  Connect the MXChip device to your computer, a drive named AZ3166 should be added to the computer.  Drag and drop the chirpFirmware.bin file onto the drive, the firmware will be installed and the device will reboot.  After rebooting the device should be in listening mode and ready to be Chirped at.  See the readme.md in the chirpweb directory for details how to Chirp to your device and add it to IoT Central.
 
-If the EEPROM on the device has old or bad values in it the Chirp firmware may not work correctly and interpret the values in the EEPROM as the WiFi credentials or the connection string.  If the firmware does not work as expected drag and drop the cleanEEPROM.bin file onto the AZ3166 drive and let it load and run.  This will clean out the values in the EEPROM.  Now releoad the chirpFirmware.bin as described above.
+If the EEPROM on the device contains residual data the Chirp firmware may not work correctly and interpret the values in the EEPROM as the WiFi credentials or the connection string.  If the firmware does not work as expected drag and drop the cleanEEPROM.bin file onto the AZ3166 drive and let it load and run.  This will clean out the values in the EEPROM.  Now reload the chirpFirmware.bin as described above.
 
 ## Status
 

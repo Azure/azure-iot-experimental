@@ -12,8 +12,6 @@ def binary_hook(binf, outf):
             bootbin = f.read()
     with open(outf ,'wb') as f:
             f.write(bootbin+'\xFF'*(0xc000-len(bootbin))+appbin)
-#    with open(binf.replace(".bin", ".bak.bin") ,'wb') as f:
-#           f.write(appbin)
                 
 if __name__ == '__main__':
     binary_hook(sys.argv[1], sys.argv[2])

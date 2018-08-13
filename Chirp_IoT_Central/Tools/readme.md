@@ -7,8 +7,22 @@ Tooling to create a drag and drop version of compiled .ino sketch for the MXChip
 Run using the following command line from the Tools directory:
 
 ```Bash
-python genDragnDropBin.py ../build/chirpFirmware.ino.bin ../chirpFirmware.bin
+python genDragnDropBin.py <chirpFirmware.ino.bin> <chirpFirmware.bin> 
 ```
+<chirpFirmware.ino.bin> can be found in the build directory after doing an Arduino:Verify or Arduino:Upload command in Visual Studio Code.  The default placement of the build directory is dependent on the "output" value in the ./.vscode/arduino.json file in the root of the repository.  For example if the arduino.json file looks like this:
+
+```JSON
+{
+    "board": "AZ3166:stm32f4:MXCHIP_AZ3166",
+    "configuration": "upload_method=OpenOCDMethod",
+    "sketch": "chirpFirmware/chirpFirmware.ino",
+    "port": "/dev/cu.usbmodem14303",
+    "output": "./build"
+}
+```
+
+Then the <chirpFirmware.ino.bin> file should be replaced with ../build/chirpFirmware.ino.bin .  The <chirpFirmware.bin> is the output file for the drag-and-drop bin file and can be whatever you choose.  For example: ../chirpFirmware.bin
+
 The boot.bin version is the 1.4.1 variant of the boot file.  You can also point at the boot file in the Arduino15 directory here MacOS: /Users/{user name}/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/bootloader  Windows: C:\users\{user name}\AppData\local\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\bootloader
 
 ## Status

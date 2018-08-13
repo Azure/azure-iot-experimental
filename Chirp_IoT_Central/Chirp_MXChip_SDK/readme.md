@@ -6,11 +6,13 @@ Files for the Chirp MXChip SDK
 
 After installing the MXChip SDK from [here](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/).
 
-Install the Chirp SDK.  Unfortunately this is a manual step currently, we hope to streamline this in the near future.  For now follow the following steps:
+Install the Chirp SDK.  Unfortunately this is a manual step currently, we hope to streamline this in the near future.  All the files needed for the Chirp SDK can be found in this repository in the ./Chirp_MXChip_SDK folder.
+
+For now follow the following steps:
 
 * Create a directory named Chirp in the directory: MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/libraries  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\libraries
-* Copy all the .h files from the include directory (chirp_connect_callbacks.h, chirp_connect_errors.h, chirp_connect_states.h, chirp_connect.h, chirp_sdk_defines.h) into the created Chirp directory
-* Copy the library file in the lib (.za) directory (libchirp-connect_none-armv7m-cm4-softfp.a )into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/system  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\system
+* Copy all the .h files from the ./Chirp_MXChip_SDK/include folder (chirp_connect_callbacks.h, chirp_connect_errors.h, chirp_connect_states.h, chirp_connect.h, chirp_sdk_defines.h) into the created Chirp directory
+* Copy the library file in the ./Chirp_MXChip_SDK/lib folder (libchirp-connect_none-armv7m-cm4-softfp.a )into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/system  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\system
 * Copy the platform.local.txt file into the directory MacOS: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1  Windows: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1
 
 A Chirp provided sample can be found in the Chirp-sample directory.
