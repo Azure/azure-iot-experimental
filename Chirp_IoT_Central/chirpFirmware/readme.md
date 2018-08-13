@@ -22,6 +22,7 @@ For now follow the following steps:
 * Copy the library file in the lib directory (libchirp-connect_none-armv7m-cm4-softfp.a )into the directory:
   
   __MacOS__: ~/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/system/sdk/lib
+  
   __Windows__: %LOCALAPPDATA%\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\system\sdk\lib
 * Copy the platform.local.txt file into the directory:
   
