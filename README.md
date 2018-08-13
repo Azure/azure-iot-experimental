@@ -3,6 +3,10 @@
 
 The code in this repository should be considered experimental, it is __not__ for use in production systems.  The code is provided to illustrate how to use Azure IoT services on alternative devices, different programming languages, or in alternative senarios.  This code does not consitute an official Azure SDK or officially supported services.  The code in this repo may not be supported long term, and may not be provided with official support from the Azure IoT team.  Feel free to raise issues you find in the Issues section but understand there could be a delay in getting them resolved.
 
+# Reporting Security Issues
+
+Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at secure@microsoft.com. You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the MSRC PGP key, can be found in the Security TechCenter.
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
