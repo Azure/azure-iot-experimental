@@ -23,7 +23,9 @@ python genDragnDropBin.py <chirpFirmware.ino.bin> <chirpFirmware.bin>
 
 Then the <chirpFirmware.ino.bin> file should be replaced with ../build/chirpFirmware.ino.bin .  The <chirpFirmware.bin> is the output file for the drag-and-drop bin file and can be whatever you choose.  For example: ../chirpFirmware.bin
 
-The boot.bin version is the 1.4.1 variant of the boot file.  You can also point at the boot file in the Arduino15 directory here MacOS: /Users/{user name}/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/bootloader  Windows: C:\users\{user name}\AppData\local\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\bootloader
+The boot.bin version is the 1.4.1 variant of the boot file.  You can also point at the boot file in the Arduino15 directory here 
+    __MacOS__: /Users/{user name}/Library/Arduino15/packages/AZ3166/hardware/stm32f4/1.4.1/bootloader  
+    __Windows__: C:\users\{user name}\AppData\local\Arduino15\packages\AZ3166\hardware\stm32f4\1.4.1\bootloader
 
 ## Status
 

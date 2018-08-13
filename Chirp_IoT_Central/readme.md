@@ -6,12 +6,12 @@ Reference firmware implementation for using Chirp with Azure IoT Central. Plus a
 
 The sub-directories contain the following content:
 
-* chirpFirmware - MXChip firmware source for building with Visual Studio Code and the Arduino plugin.
-* Chirp_MXChip_SDK - Include and library files for the MXChip SDK along with the platform.local.txt for compiling with the Chirp SDK library
-* prebuilt_firmware - Pre-built firmware for the MXChip that can be drag-and-dropped onto the device.
-* chirpweb - Web browser application to provision MXChip devices onto Azure IoT Central. 
-* cleanEEPROM - Code for cleaning a corrupted EEPROM on the MXChip
-* Tools - Miscellaneous tooling including the python script to build a drag-n-drop firmware .bin
+* [chirpFirmware](chirpFirmware) - MXChip firmware source for building with Visual Studio Code and the Arduino plugin.
+* [Chirp_MXChip_SDK](Chirp_MXChip_SDK) - Include and library files for the MXChip SDK along with the platform.local.txt for compiling with the Chirp SDK library
+* [prebuilt_firmware](prebuilt_firmware) - Pre-built firmware for the MXChip that can be drag-and-dropped onto the device.
+* [chirpweb](chirpweb) - Web browser application to provision MXChip devices onto Azure IoT Central. 
+* [cleanEEPROM](cleanEEPROM) - Code for cleaning a corrupted EEPROM on the MXChip
+* [Tools](Tools) - Miscelaneous tooling including the python script to build a drag-n-drop firmware .bin
 
 ## Status
 
