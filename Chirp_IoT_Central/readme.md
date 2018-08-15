@@ -4,6 +4,18 @@ Reference firmware implementation for using Chirp with Azure IoT Central. Plus a
 
 [![Chirp and IoT Central](https://i.ytimg.com/vi/1oCyJe7WS7o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAml_OaZBr6poaaK9My3shxVNVUUg)](https://www.youtube.com/watch?v=1oCyJe7WS7o)
 
+If you only want to checkout this one folder from the experimental repository follow the following instructions to do a sparse checkout of just the Chirp_IoT_Central folder:
+
+```Bash
+mkdir azure-iot-experimental
+cd azure-iot-experimental
+git init
+git remote add -f origin git@github.com:Azure/azure-iot-experimental.git
+git config core.sparseCheckout true
+echo "Chirp_IoT_Central" >> .git/info/sparse-checkout
+git pull origin master
+```
+
 ## Contents
 
 The sub-directories contain the following content:
