@@ -1,6 +1,8 @@
 # Chirp and Azure IoT Central Sample Code
 
-Reference firmware implementation for using Chirp with Azure IoT Central. Plus a web browser based provisioning sample application to quickly get MXChip devices onto Azure IoT Central.
+Reference firmware implementation for using Chirp with Azure IoT Central. Plus a web browser based provisioning sample application to quickly get MXChip devices onto Azure IoT Central.  You can see Chirp and IoT Central in action in this video:
+
+[![Chirp and IoT Central](https://i.ytimg.com/vi/1oCyJe7WS7o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAml_OaZBr6poaaK9My3shxVNVUUg)](https://www.youtube.com/watch?v=1oCyJe7WS7o)
 
 ## Contents
 
